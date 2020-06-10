@@ -4,16 +4,6 @@ Yesterday my wife broke her dhikr counter. So I trying built a simple counter ap
 <img src="https://github.com/hdk24/counter-swift/blob/master/screenshot/sc_home_app.png" width="212" height="460"> 
 
 
-#### Tech
-* Swift
-* SwiftUI
-* UserDefault
-
-
-## Author
-**Hanantadk**
-
-
 ## Reference
 * [hackingwithswift.com/](https://hackingwithswift.com/)
 
