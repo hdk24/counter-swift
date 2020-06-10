@@ -13,9 +13,9 @@
 		D71ED1A9248FB54500D94A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D71ED1A8248FB54500D94A54 /* Assets.xcassets */; };
 		D71ED1AC248FB54500D94A54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D71ED1AB248FB54500D94A54 /* Preview Assets.xcassets */; };
 		D71ED1AF248FB54500D94A54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71ED1AD248FB54500D94A54 /* LaunchScreen.storyboard */; };
-		D71ED1C1248FD95200D94A54 /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71ED1C0248FD95200D94A54 /* NavigationBarModifier.swift */; };
-		D71ED1C3248FD99500D94A54 /* NavExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71ED1C2248FD99500D94A54 /* NavExtension.swift */; };
-		D71ED1C9248FE04900D94A54 /* PreferenceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71ED1C8248FE04900D94A54 /* PreferenceUtils.swift */; };
+		D71ED1C9248FE04900D94A54 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71ED1C8248FE04900D94A54 /* Preferences.swift */; };
+		D7C67F252490BEB7007E169B /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C67F242490BEB7007E169B /* ProgressBar.swift */; };
+		D7C67F282490D86F007E169B /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C67F272490D86F007E169B /* AppConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		D71ED1AB248FB54500D94A54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D71ED1AE248FB54500D94A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D71ED1B0248FB54500D94A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D71ED1C0248FD95200D94A54 /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
-		D71ED1C2248FD99500D94A54 /* NavExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavExtension.swift; sourceTree = "<group>"; };
-		D71ED1C8248FE04900D94A54 /* PreferenceUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceUtils.swift; sourceTree = "<group>"; };
+		D71ED1C8248FE04900D94A54 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		D7C67F242490BEB7007E169B /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		D7C67F272490D86F007E169B /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +62,9 @@
 		D71ED1A1248FB54200D94A54 /* counter */ = {
 			isa = PBXGroup;
 			children = (
+				D7C67F262490D85A007E169B /* utils */,
+				D7C67F232490BE99007E169B /* widget */,
 				D71ED1C5248FDB1B00D94A54 /* data */,
-				D71ED1BF248FD93900D94A54 /* helper */,
 				D71ED1A2248FB54200D94A54 /* AppDelegate.swift */,
 				D71ED1A4248FB54200D94A54 /* SceneDelegate.swift */,
 				D71ED1A6248FB54200D94A54 /* ContentView.swift */,
@@ -83,21 +84,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D71ED1BF248FD93900D94A54 /* helper */ = {
-			isa = PBXGroup;
-			children = (
-				D71ED1C0248FD95200D94A54 /* NavigationBarModifier.swift */,
-				D71ED1C2248FD99500D94A54 /* NavExtension.swift */,
-			);
-			name = helper;
-			sourceTree = "<group>";
-		};
 		D71ED1C5248FDB1B00D94A54 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				D71ED1C8248FE04900D94A54 /* PreferenceUtils.swift */,
+				D71ED1C8248FE04900D94A54 /* Preferences.swift */,
 			);
 			name = data;
+			sourceTree = "<group>";
+		};
+		D7C67F232490BE99007E169B /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				D7C67F242490BEB7007E169B /* ProgressBar.swift */,
+			);
+			path = widget;
+			sourceTree = "<group>";
+		};
+		D7C67F262490D85A007E169B /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				D7C67F272490D86F007E169B /* AppConstant.swift */,
+			);
+			name = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,10 +181,10 @@
 			files = (
 				D71ED1A3248FB54200D94A54 /* AppDelegate.swift in Sources */,
 				D71ED1A5248FB54200D94A54 /* SceneDelegate.swift in Sources */,
-				D71ED1C9248FE04900D94A54 /* PreferenceUtils.swift in Sources */,
-				D71ED1C1248FD95200D94A54 /* NavigationBarModifier.swift in Sources */,
+				D71ED1C9248FE04900D94A54 /* Preferences.swift in Sources */,
 				D71ED1A7248FB54200D94A54 /* ContentView.swift in Sources */,
-				D71ED1C3248FD99500D94A54 /* NavExtension.swift in Sources */,
+				D7C67F252490BEB7007E169B /* ProgressBar.swift in Sources */,
+				D7C67F282490D86F007E169B /* AppConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
