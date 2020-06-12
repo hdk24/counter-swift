@@ -1,7 +1,7 @@
 # Counter App
 Yesterday my wife broke her dhikr counter. So I trying built a simple counter app for her. This app built with swift,  swiftUI, and design inspired by [Vildana Lojo](https://dribbble.com/vikavld).
 
-<img src="https://github.com/hdk24/counter-swift/blob/master/screenshot/sc_home_app.png" width="212" height="460"> 
+<img src="https://github.com/hdk24/counter-swift/blob/master/screenshot/banner_counter_app.png"> 
 
 
 ## Reference
